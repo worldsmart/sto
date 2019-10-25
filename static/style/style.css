@@ -1,0 +1,937 @@
+html{
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+    font-size: 17px;
+    line-height: 1.8px;
+    color:#333;  
+    
+    min-width: 390px;
+}
+
+*,
+*:before
+*:after {
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color:#333;
+}
+
+
+/*
+    HEADER
+    ШАПКА САЙТА
+*/
+.header{
+    width: 100%;
+    height: 70vh;
+    background: url(../images/head_car.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding-top: 30px;
+}
+
+.container{ 
+   margin: 0 auto;
+   width: 100%;
+   max-width: 1200px;
+}
+
+/*
+   lOGO AND NAVBAR
+   ЛОГОТИП И МЕНЮ
+*/
+.block-information{  
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    margin: -20px 0 20px 0; 
+}
+.block-information i{
+    color: #e8b13c;
+    padding-right: 10px;
+}
+.block-information a{
+    padding-right: 10px;
+    color: #fff;
+}
+
+
+.header-navbar{ 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.header-logo{
+    text-transform: uppercase; 
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;    
+    font-family: 'Cabin', sans-serif;
+}
+
+.header-logo img{   
+    width: 40px; 
+    float: left;
+    margin-right: 10px;
+}
+.menu{
+    display: none;
+    text-transform: uppercase;
+    font-size: 30px; 
+    color: #fff;
+    background:none;
+    text-transform: uppercase;
+    border: none;
+    float: right; 
+}
+
+#check-menu:checked ~ .navbar{
+    max-height: 500px;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    position: relative;
+}
+#check-menu{
+    display: none;
+}
+.navbar{
+    text-transform: uppercase;
+    font-size: 18px;  
+}
+
+.navbar a{
+    line-height: 30px;
+    
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s linear;
+    font-family: 'Ubuntu', sans-serif;
+    
+    position: relative; 
+}
+
+.navbar a:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height:3px;
+    
+    background-color: #e8b13c;
+    position: absolute;
+    top:100%;
+    left: 0;
+    z-index: 1;
+    
+    opacity: 0;
+    transition: opacity 0.2s linear; 
+}
+.navbar a:hover{
+    color: #e8b13c;
+}
+.navbar a:hover:after{
+    opacity: 1;
+}
+
+
+.header-line1{
+    background-color:#9d9d9d;
+    opacity: 0.4;
+    height: 1px;
+    margin-top: 20px;
+}
+.header-line2{
+    display: none;
+    background-color:#9d9d9d;
+    opacity: 0.4;
+    height: 1px;
+    margin-top: 20px;
+}
+
+/*
+    LEFT INNER
+    ТЕКСТ СЛЕВА
+*/
+.header-inner{  
+    width: 100%;
+    max-width: 1200px;
+    
+    position: absolute;
+    
+    top: 50%;                       
+    transform: translate(0, -50%);
+    
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+.header-inner-text{
+    position: relative; 
+    color: #fff;
+    font-size: 20px;    
+}
+
+.header-inner-text h2{
+    text-transform: uppercase; 
+    font-size: 45px;  
+}
+
+.header-inner-text p{
+    line-height: 30px;
+}
+
+.header-inner-text a{  
+    padding: 15px 20px 15px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px #fff solid;
+    font-size: 16px;
+    transition: all 0.3s ease 0s; 
+}
+
+.header-inner-text a:hover{
+    border: 1px #e8b13c solid;
+    background-color: #e8b13c;  
+}
+
+
+/*
+   NUMBER AND " ORDER CALL " BUTTON 
+   НОМЕР И КНОПКА "ЗАКАЗАТЬ ЗВОНОК"
+*/
+
+.header-inner-form{ 
+    margin: auto 0;
+    border-top:4px #e8b13c solid;
+    
+    background: rgba(255, 255, 255, 0.7);
+    
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    position: relative; 
+    width: 380px;
+    height: 320px;
+}
+
+.form-number a{
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1.5px;
+    
+    display: inline-block;
+    margin: 0;
+    
+    border: 1px #e8b13c solid;
+    border-radius: 5px;
+    background: #e8b13c;
+ 
+    padding: 5px 10px 5px 10px; 
+}
+
+.header-inner-form i{
+    font-size: 30px;
+    vertical-align:sub;
+    padding-right: 10px;
+}
+
+.header-inner-form button{
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    background-color: #e5a73a;
+    text-transform: uppercase;
+    padding: 10px 15px 10px 15px;
+    border: none;
+    position: relative;
+	box-sizing: border-box;
+    outline: none;
+}
+
+.header-inner-form button:before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 5px;
+    height:100%;
+	background: rgba(255,255,255,0.3);
+	transition: all 500ms ease;
+}
+
+.header-inner-form  button:hover:before {
+	width: 100%;
+}
+
+
+/*
+    CONTENT-PAGE
+   ОПИСАНИЕ "ПОЧЕМУ МЫ?"
+*/
+.content-page{
+    font-size: 20px;
+}
+
+.block-row{
+    text-align: center;
+    line-height: 40px;  
+}
+
+.box-header{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 40px; 
+}
+
+.box-header:after {
+    display: block;
+    content: "";
+    background: #e5a73a;
+    width: 100px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+
+/*
+    STATICTICS ( СТАТИСТИКА )
+*/
+.statistics{
+    margin-top: 80px;
+    background-image: url(../images/background_statistics_3.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.stat{
+    display: flex;
+}
+
+.stat-item{
+    flex: 1 1 0;  
+    padding: 20px 30px;
+    border-left: 1px #595959 solid; 
+    text-align: center;
+    color: #fff;
+}
+
+.stat-item:last-child{
+    border-right: 1px #595959 solid; 
+}
+
+.stat-number{
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 0;
+}
+
+/*
+    OUR ADVANTAGES
+    НАШИ ПРЕИМУЩЕСТВА
+*/
+.advantages-item-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;  
+}
+
+.advan-item{
+    width: 300px;
+    height: 200px;
+    
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.advan-item i{
+    font-size: 60px;
+    color: #e09431;
+}
+
+.advan-item p.advan-header{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*
+    CAR BRANDS
+    МАРКИ МАШИН
+*/
+.car-brands img{
+    margin-top: -20px;
+    width:380px;
+    height:360px;
+    padding-right: 50px;
+    float: left;    
+}
+.car-brands p{
+    text-indent: 20px;
+    text-align:left;
+}
+
+
+/*
+     RECORD TO REPAIR
+     ЗАПИСЬ НА РЕМОНТ
+*/
+.repair-record{
+    margin-top: 70px;
+    background-image:url(../images/pic180926130348665.jpg);
+    background-size: cover;   
+}
+.repair-record-item{
+    line-height: 30px;
+    display: flex;
+    padding: 10px;
+    color: #fff;
+    justify-content: space-between;
+}
+.repair-record-item button{
+    margin:5% 10px 0 20px;
+    height: 100%;
+    background: none; 
+    padding: 15px 20px 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    border: 1px #fff solid;
+    font-size: 16px;
+    transition: all 0.3s ease 0s; 
+}
+.repair-record-item button:hover{
+    border: 1px #e5a73a solid;
+    background-color: #e5a73a; 
+    cursor: pointer;
+}
+
+
+/*
+     NEWS BLOG
+     НОВОСТНОЙ БЛОГ
+*/
+.news-blog{
+    margin: 0 30px 0;
+    text-align:left;
+}
+.news-blog ul{
+    font-size: 18px;
+    background-color: #e8b13c;
+}
+.news-blog li{ 
+    padding: 2px 20px 2px;
+}
+.news-blog-title{
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+}
+
+/*
+    FOOTER
+    ПОДВАЛ
+*/
+.footer{
+    margin-top: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color:#333;
+    color: #fff;
+
+    background:url(../images/footer.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+}
+
+.footer-row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer-col{    
+}
+.footer-col h4{
+    text-transform: uppercase;
+}
+.footer-col p{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.footer-col ul{
+    padding: 0;
+    margin-left: 20px;
+    list-style-type:square; 
+}
+
+.footer-col li{  
+    line-height: 40px;
+    color:#e5a73a;  
+}
+
+.footer-col a{
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+}
+.footer-col a[target]{
+    line-height: 25px;
+}
+.footer-col img{
+    width: 320px;
+    height: 230px;  
+}
+
+.footer-col a:hover{
+    color: #e5a73a;
+    transition: all 0.3s linear;
+}
+
+.footer-head{
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;  
+}
+
+.footer-head:after{
+    display: block;
+    content: "";
+    background: #e5a73a;
+    width: 50px;
+    height: 2px; 
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.footer-developer{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.footer-developer a{
+    color: #fff;
+}
+.footer-developer a:hover{
+    color: #e5a73a;
+    transition: all 0.3s linear;
+}
+
+
+/*
+    ABOUT_US.HTML
+    О НАС (СТРАНИЦА)
+*/
+.mini-nav{
+    padding-left: 30px;
+    margin-top: 20px;
+    font-size: 17px;
+    margin-bottom: -30px;
+}
+.mini-nav a{
+    color: #e59406;
+}
+.content-row{
+     line-height: 20px;
+     max-width: 1000px;
+     display: block;
+     margin: 0 auto; 
+}
+.content-row h4{
+    text-align: center;   
+}
+.content-row img{
+    display:block;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 15px;  
+}
+.content-row p{
+    line-height: 1.4;
+    font-family: 'Noto Sans', sans-serif;
+    text-indent: 20px;
+    font-size: 17px;
+}
+.content-row li{
+    font-size: 17px;
+    color:#e5a73a;    
+}
+.content-row span{
+    color: #333;
+}
+
+
+/*
+   CONTACTS
+   КОНТАКТЫ
+*/
+.contacts{
+    display: flex;
+    justify-content:center;
+}
+
+.contacts-row{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.contacts-row p{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.contacts-map{
+    padding-left: 50px;
+}
+
+
+/*
+    SERVICES
+    УСЛУГИ
+*/
+.services-row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.services-row p{
+    font-family: 'Roboto','sans-serif';
+    font-weight: 700;
+    padding-left: 20px;
+    padding-top: 40px;
+    font-size: 40px;
+    color: #fff;
+}
+.content-service  a{
+    width: 350px;
+    height: 350px;
+    display: block;
+    position: relative;
+}
+
+.content-service  a:hover{
+   box-shadow:inset 0 0 0 350px rgba(0,0,0,0.3);
+    transition: 0.2ss;
+}
+
+/*
+    PHOTOGALLEY
+    ФОТОГАЛЕРЕЯ
+*/
+.fotorama__wrap{
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.fotorama__wrap img{
+    
+}
+.fotorama{
+
+}
+.fotorama__img{
+    max-width: 700px;
+    max-height: 350px;
+}
+
+/*
+   BUTTON
+   КНОПКА СВЯЗИ
+*/
+.dws{
+   position: fixed;
+   right: 10%;
+   bottom: 5%;
+}
+.pulse, .bloc, .phone {
+     position: absolute;
+     width: 90px;
+     height: 90px;
+     color: #fff;
+     text-align: center;
+     border-radius: 50%;
+}
+.bloc {
+     cursor: pointer;
+     z-index: 1;
+     overflow: hidden;
+}
+.pulse {
+     background: #ff9600;
+     position: relative;
+     transition: .5s;
+}
+.phone {
+     font-size: 50px;
+     line-height: 94px;
+     animation: phone 1s ease-in-out infinite;
+}
+.text {
+     position: absolute;
+     opacity: 0;
+     text-transform: uppercase;
+     font-weight: 700;
+     top: 28px;
+     font-size: 15px;
+     transform: scaleX(-1);
+     transition: .5s ease-in-out;
+}
+.phone i {
+    transition: .5s ease-in-out;
+}
+.pulse:hover {
+    background: #ff9600;
+}
+.pulse:hover i {
+     transition: .5s ease-in-out;
+     transform: scale(0);
+}
+.pulse:hover .text {
+     transform: scaleX(1);
+     transition: .5s ease-in-out;
+     opacity: 1;
+}
+.pulse:hover::before,
+.pulse:hover::after {
+     content: '';
+     position: absolute;
+     border: 1px solid #ff7200;
+     left: -20px;
+     right: -20px;
+     top: -20px;
+     bottom: -20px;
+     border-radius: 50%;
+     animation: pulse 1.8s linear infinite;
+     opacity: 0;
+}
+.pulse:hover::after {
+    animation-delay: .5s;
+}
+
+@keyframes phone {
+     0%, 100% {
+      transform: rotate(-20deg);
+     }
+     50% {
+      transform: rotate(21deg);
+     }
+}
+    @keyframes pulse {
+     0% {
+      transform: scale(0.5);
+      opacity: 0;
+     }
+     50% {
+      opacity: 1;
+     }
+     100% {
+      transform: scale(1.2);
+      opacity: 0;
+     }
+}
+
+/*
+   BACK TO TOP
+   КНОПКА НАВЕРХ
+*/
+.back-to-top{
+    padding-top: 40px;
+    text-align: center;
+    font-size:50px; 
+}
+.back-to-top a{
+    padding-left: 18px;
+    padding-right:18px;
+    border: 2px #333 solid; 
+    border-radius:50%;
+}
+.back-to-top a:hover{
+    background: #333;
+    color: white;
+    transition: .3s ease-in-out;
+}
+
+/*
+   ВСПЛЫВАЮЩАЯ ФОРМА ОБРАТНОГО ЗВОНКА
+*/
+#myForm{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0, 0.8);
+}
+.call-form{    
+   color: #333;
+   position: fixed;
+   width:450px;
+   background-color: rgba(255, 255, 245, 0.7);
+   top: 50%;
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   box-shadow: 0 -5px 0 #ff9600;
+   padding-bottom: 20px;
+}
+input[type="text"],input[type="number"]{
+   width: 300px;
+   height:50px;
+   font-size: 18px;
+   margin-bottom: 25px;
+   border-radius: 4px;
+   padding-left: 40px;
+}
+.call-input input:hover{
+ box-shadow: 0 0 6px 3px rgba(215, 137, 49, 0.35);
+}
+.call-submit {
+ padding: 13px 30px;
+ margin: 5px 0 20px 0;
+ background-color: #e5a73a;
+ padding: 15px 20px 15px;
+ text-transform: uppercase;
+ color: #fff;
+ border: 0px;
+ font-size: 18px;
+ transition: all 0.3s ease 0s;
+ cursor: pointer;
+}
+.call-submit:hover{
+ transition: all 0.5s;
+ background: #fff;
+ color: #ff9600;
+}
+.call-input::before{
+ font-family: "FontAwesome";
+ content: "\f3cd";
+ position: absolute;
+ font-size: 30px;
+ padding: 10px 0 0 7px;
+ color: #333;
+}
+.call-input:nth-child(2)::before{
+content: "\f007";
+}
+.call-input:hover::before{
+ color: #ff9600;
+ transition: all 0.3s;
+}
+.call-form button{
+    float: right;
+    margin-right:20px;
+    border: none;
+    background: none;
+    color: #575555;
+}
+.call-form button:hover{
+    cursor: pointer;
+    color: #333;
+}
+
+
+/*
+    PRICES
+    ЦЕНЫ
+*/
+.prices-content{
+    margin-left: 40px;
+    font-size: 18px; 
+}
+.prices-content button{
+    margin: 5px 0;
+    color: #333;
+    padding: 10px; 
+    border: none;  
+    background: none;
+    outline: none;
+}
+.prices-content button:hover{
+    background-color: #e8b13c;
+    cursor: pointer;
+}
+.prices-content button i{
+    font-size: 12px;  
+    padding:0 5px;
+}
+.table-prices{
+    display:none;
+}
+.table-prices{
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.table-prices th{
+    padding: 10px;
+    background-color: #e8b13c;
+}
+.table-prices tr{
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 20px;
+}
+.table-prices td{
+    font-size: 17px;
+    padding: 6px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.btns{
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    justify-content: center;
+}
+
+.list{
+    border: 1px solid gray;
+    margin: 10px;
+    border-radius: 1px;
+}
+
+.deleter{
+    color: red;
+    cursor: pointer;
+}
+
+.cont{
+    display: flex;
+    margin: 10px;
+    padding: 3px;
+    border-bottom: 1px solid gray;
+    flex-wrap: wrap;
+}
