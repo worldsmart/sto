@@ -819,7 +819,6 @@ input[type="text"],input[type="number"]{
  box-shadow: 0 0 6px 3px rgba(215, 137, 49, 0.35);
 }
 .call-submit {
- padding: 13px 30px;
  margin: 5px 0 20px 0;
  background-color: #e5a73a;
  padding: 15px 20px 15px;
@@ -829,6 +828,7 @@ input[type="text"],input[type="number"]{
  font-size: 18px;
  transition: all 0.3s ease 0s;
  cursor: pointer;
+    text-align: center;
 }
 .call-submit:hover{
  transition: all 0.5s;

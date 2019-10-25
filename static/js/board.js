@@ -11,7 +11,9 @@ function start() {
         if(Http.readyState == 4 && Http.status == 200) {
             let res = JSON.parse(Http.responseText);
             if(res['err']){
-                alert(Http.responseText['err']);
+                setTimeout(()=>{
+                    window.location.reload();
+                }, 200);
             }else {
                for(let i = res.length - 1; i >= 0;i--){
                    add(res[i]);
