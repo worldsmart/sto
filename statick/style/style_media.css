@@ -1,0 +1,566 @@
+
+@media screen and (max-width:1300px){
+    .dws{
+        right: 5%;
+    }      
+}
+
+
+@media screen and (max-width:1230px){
+    .header-navbar{
+        justify-content: space-evenly; 
+    }
+    .content-row img{
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+
+
+
+@media screen and (max-width:1100px){   
+      html{
+        font-size: 16px;
+       }
+        .container{
+        max-width: 1000px;
+        }
+       .header-inner{ 
+           max-width: 1000px;
+       }
+        .header-logo{
+            font-size: 25px;
+        }
+        .header-logo img{
+            width: 30px;
+        }
+        .navbar{
+            font-size: 16px;
+        }
+        .header-inner-text{
+            font-size: 18px;
+        }
+        .header-inner-text h2{
+            font-size: 40px;
+        }
+        .header{
+            height: 55vh;
+        }
+        .header-inner-form{
+            width: 330px;
+            height: 290px;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+        .header-inner-form i{
+            font-size: 25px;      
+        }
+        .header-inner-form button{
+            font-size: 16px;
+        }
+    
+        .content-page{
+        font-size: 18px;
+        }
+       .box-header{
+        font-size: 27px;
+       }
+       .box-header:after {
+         margin-top: 15px;
+       }
+    
+       .stat-number{
+        font-size: 50px;
+      }
+       .advan-item{
+           max-width: 260px;
+           padding: 10px;
+           font-size: 16px;
+       }
+        .advan-item i{
+            font-size: 50px;
+        }
+       .advan-item p.advan-header{
+        font-size: 18px;
+       }
+
+       .car-brands img{
+         width:340px;
+         height:320px;
+         padding-right: 30px;
+         margin-left: 20px;
+       }  
+    
+       .fb-comments{
+           
+       }
+       .back-to-top{
+          font-size:40px;
+       }
+       .back-to-top a{
+          padding-left: 15px;
+          padding-right:15px;
+       }
+    .footer-col p{
+        font-size: 15px;
+    }
+    .footer-col img{
+        width: 300px;
+        height: 210px;
+    }
+
+    
+    .pulse, .bloc, .phone{
+        width: 80px;
+        height: 80px;
+    }
+    .phone{
+        font-size: 40px;
+        line-height: 80px;
+    }
+    .text{
+        font-size: 13px;
+    }
+    .contacts-map{
+        width: 600px;
+    }
+    .services-row p{
+        font-size: 34px;
+    }
+    .content-service  a{
+        width: 300px;
+        height: 300px;
+        }
+
+  }
+
+
+
+@media screen  and (orientation: portrait){
+        .header{
+              height: 45vh;
+        }
+    }
+
+
+
+
+@media screen and (max-width:1000px){
+        .header-line1{
+        display: none;
+    }
+    .header-line2{
+        display: block;
+    }
+        .container{
+          max-width: 900px;
+        }
+       .header-inner{ 
+           max-width: 900px;
+       }
+    
+        .header{
+            height:60vh;
+        }
+        .header-navbar{
+            padding-left: 60px;                
+            display: block;
+        }
+
+        .navbar{
+            padding-top:20px; 
+        }
+        .navbar a{
+             margin: 0 25px;
+        }
+        .header-inner{
+            margin: 30px;
+            width: auto;
+            margin-left: 70px;
+        }
+        .header-inner-form{
+            margin-left: 70px;
+        }
+    
+        .stat-item{
+             padding: 20px 0px;
+        }     
+    .content-row p{
+        padding-left: 20px;
+        font-size: 16px;
+    }
+    .content-row li{
+        font-size: 16px;
+    }
+    .contacts-row{
+        padding-left: 20px;
+        font-size: 15px;
+    }
+    .contacts-row p{
+    font-size: 17px;
+     }
+    .contacts-map{
+        width: 500px;
+    }
+        .services-row p{
+        font-size: 28px;
+    }
+    .content-service  a{
+        width: 250px;
+        height: 250px;
+        }
+    
+    .content-row img{
+        width: 98%;      
+    }
+    .repair-record-item{
+        flex-direction: column;
+        text-align: center;  
+
+
+    }
+    .repair-record-item button{
+        margin: 10px auto 20px;
+    }
+}
+
+
+
+
+@media screen and (max-width:900px){
+    .header{
+        
+    }
+    .header-inner-text h2{
+        font-size: 30px;
+    }
+    .header-inner-text a{
+        padding: 12px 17px 12px;
+        font-size: 14px;
+    }
+        .header-inner-form{
+            width: 300px;
+            height: 270px;
+            margin-top: 30px;
+            font-size: 19px;
+        }
+        .header-inner-form i{
+            font-size: 24px;      
+        }
+        .header-inner-form button{
+            font-size: 14px;
+        }
+        .header-inner{
+            margin: 20px;
+            width: auto;
+            margin-left: 70px;
+        }
+        .header-inner-form{
+            margin-left: 50px;
+        }
+        .content-page p{
+           
+        }
+}
+
+
+
+@media screen and (max-width:834px){
+    .header-inner-form{
+        display: none;
+    }
+    .header-logo{
+        padding-left: 20px;
+    }
+    .header-navbar{
+        padding-left: 0;
+    }
+    .stat-number{
+        font-size: 45px;
+    }
+    .fb-comments{
+       width: 600px;
+    }
+    
+
+}
+
+@media screen and (max-width:764px){
+        .dws{
+        bottom: 10%;
+      } 
+    .navbar a{
+        display:block;
+        margin: auto 0;
+        padding: 10px 20px 15px 20px;
+        border-bottom:1px #333 solid; 
+        text-align: center;
+    }  
+    
+    .navbar{
+         max-height: 0;
+         font-size: 0;
+         overflow: hidden;
+         transition:all .4s;
+         float: right; 
+          
+    }
+    .menu{
+        display: block;
+        margin-top: -30px;
+        margin-right: 75px;
+    }
+    .statistics{
+        background-image: url(../images/background_stat_media.jpg);
+    }
+    .stat{
+        flex-direction:column;
+    }
+    .stat-item{
+         padding: 0px 0px 10px;
+         border-top: 1px #595959 solid; 
+    }
+    .stat-item:last-child{
+        padding-bottom: 20px;
+    }
+    .stat-number{
+        font-size: 55px;
+    }
+    .car-brands img{
+        display: none;
+    }
+    .car-brands p{
+        margin: 20px 10px 0px 20px;
+    }
+    
+    .footer-row{
+        
+    }
+    .footer-col:last-child{
+      margin-top: 60px;
+      
+      width:600px;
+    
+    }
+    .footer-col li{
+        float: left;
+        padding-right: 30px;  
+    }
+    .contacts{
+        flex-direction: column;
+        
+    }
+    .contacts-row{
+        text-align: center;
+    }
+    .contacts-map{
+        padding-top: 20px;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    .services-row{
+        flex-direction: column;
+    }
+    .services-row p{
+        font-size: 35px;
+    }
+    .content-service a{
+        margin:0 auto;
+        width: 90%;  
+    }
+    .fotorama{
+        margin: 0 auto;
+        width: 600px;
+    }
+    .repair-record-item button{
+        font-size: 14px;
+        padding: 10px 15px 10px;
+    }
+  
+}
+
+
+
+
+
+@media screen and (max-width:650px){
+    .header-inner{
+        margin-left: 30px;
+    }
+    .box-header{
+        margin-top: 40px;
+    }
+    
+    .footer-col:last-child{
+        margin-left: 30px;
+    }
+    .developer{
+        padding-top: 10px;
+        display:block;
+    }
+    .fotorama{
+        width: 500px;
+    }
+}
+
+
+@media screen and (max-width:590px){
+    .header{
+        height: 50vh; 
+    }
+    .block-information{
+        display: none;
+    }
+    .header-inner-text h2{
+        font-size: 25px;
+    }
+    .header-inner{
+        width: 300px;
+    }
+    .footer-col:last-child{
+        width: 400px;
+    }
+    .advan-item{
+        padding: 0;
+    }
+    .content-row p{
+        font-size: 14px;
+    }
+    .content-row li{
+        font-size: 14px;
+    }
+    .prices-content{
+        font-size: 16px;
+    }
+    .table-prices td{
+        font-size:14px;;
+    }
+    
+}
+
+
+@media screen and (max-width:510px){
+    .footer{
+       padding-left: 30px;
+       padding-right: 30px;
+    }
+    .footer-col img{
+       margin-top: 30px;
+    }
+    .call-form{
+        width: 350px;
+        padding-bottom: 10px;
+    }
+    input[type="text"],input[type="number"]{
+        width: 250px;
+         height:45px;
+    }
+    .call-submit{
+        font-size: 16px;
+    }
+    .contacts-map{
+        width: 100%;   
+    }
+    .fotorama{
+        width: 100%;
+    }
+    .content-row h4{
+        margin: 10px 10px 20px 10px;
+    }
+}
+
+
+@media screen and (max-width:490px){
+    .header-logo{
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .header-logo img{
+        margin-top: -2px;
+    }
+    .menu{
+        margin-right: 50px;
+    }
+}
+
+
+@media screen and (max-height:800px){
+    .header{
+        height:500px;
+        width: auto;
+    }
+}
+
+@media screen and (max-height:800px) and (max-width:600px){
+    .header{
+        height:400px;
+        
+    }
+}
+
+@media screen and (max-width:450px){
+    .header-inner-text{
+        font-size: 17px;
+    }
+    .header-inner-text h2{
+        font-size: 20px;
+    }
+    .navbar a{
+        
+       padding: 5px 15px 10px 15px;
+        
+    }
+    .content-page{
+        font-size: 16px;
+    }
+    .box-header{
+        font-size: 24px;
+        margin: 30px;
+    }
+    .statistics{
+        margin-top: 40px;
+    }
+    .stat-number{
+        font-size: 50px;
+    }
+    .back-to-top{
+        padding-top: 20px;
+    }
+    
+    .content-service a{
+       width: 350px;
+       height: 250px;
+    }
+    .news-blog{
+        margin: 0 15px 0;
+    }
+    .news-blog ul{
+       font-size: 16px;
+    }
+    .news-blog li{ 
+       padding: 0;
+     }
+    .news-blog-title{
+        font-size: 20px;
+     }
+    .block-row{
+        line-height: 30px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
