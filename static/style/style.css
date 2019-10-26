@@ -610,8 +610,10 @@ a{
     font-size: 18px;
 }
 
-.contacts-map{
+.contacts-map{ 
     padding-left: 50px;
+    margin-right: 20px;
+    
 }
 
 
@@ -652,11 +654,9 @@ a{
   margin: 0 auto;
   margin-bottom: 40px;
 }
-.fotorama__wrap img{
-    
-}
-.fotorama{
-
+.fotorama img{
+    text-align: center;
+    margin: 0 auto;
 }
 .fotorama__img{
     max-width: 700px;
@@ -668,6 +668,7 @@ a{
    КНОПКА СВЯЗИ
 */
 .dws{
+   z-index: 9999;
    position: fixed;
    right: 10%;
    bottom: 5%;
@@ -869,6 +870,7 @@ content: "\f007";
 */
 .prices-content{
     margin-left: 40px;
+    margin-right:40px;
     font-size: 18px; 
 }
 .prices-content button{
@@ -909,6 +911,8 @@ content: "\f007";
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
+
+
 
 .btns{
     display: flex;
