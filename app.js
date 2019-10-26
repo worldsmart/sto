@@ -10,10 +10,11 @@ const app = express();
 
 const port = 80;
 
+app.use(forceSsl);
 app.use(bodyparser.json());
 app.use(express.static('./static'));
 app.use(express.static('./admin/login_v10'));
-app.use(forceSsl);
+
 
 app.get('/', (req, res)=>{
     res.sendFile(path.join(__dirname, 'static', 'main.html'));
