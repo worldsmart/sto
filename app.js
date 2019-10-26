@@ -4,6 +4,7 @@ const bodyparser = require('body-parser');
 let admins = require('./admin/users');
 const fs = require('fs');
 const crypto = require('crypto');
+const forceSsl = require('express-force-ssl');
 
 const app = express();
 
@@ -12,6 +13,7 @@ const port = 80;
 app.use(bodyparser.json());
 app.use(express.static('./static'));
 app.use(express.static('./admin/login_v10'));
+app.use(forceSsl);
 
 app.get('/', (req, res)=>{
     res.sendFile(path.join(__dirname, 'static', 'main.html'));
@@ -131,5 +133,18 @@ app.get('*', (req, res)=>{
 });
 
 app.listen(port, ()=>{
-    console.log('Server started on port ' + port);
+    console.log('http Server started on port ' + port);
+});
+
+const https = require('https');
+const privateKey  = fs.readFileSync(path.join(__dirname, 'cert', 'private.key'), 'utf8');
+const certificate = fs.readFileSync(path.join(__dirname, 'cert', 'certificate.crt'), 'utf8');
+const ca = fs.readFileSync(path.join(__dirname, 'cert', 'ca_bundle.crt'), 'utf8');
+
+const credentials = {key: privateKey, cert: certificate, ca: ca};
+
+const portS = 443;
+
+https.createServer(credentials, app).listen(portS,()=>{
+    console.log('https Server started on port ' + portS);
 });
