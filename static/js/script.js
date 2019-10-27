@@ -152,3 +152,6 @@ function openPrice_tire_fitting(){
 }; };  
 
 
+
+
+

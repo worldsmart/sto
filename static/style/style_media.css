@@ -333,10 +333,6 @@
     .car-brands p{
         margin: 20px 10px 0px 20px;
     }
-    
-    .footer-row{
-        
-    }
     .footer-col:last-child{
       margin-top: 60px;
       
@@ -369,12 +365,12 @@
         margin:0 auto;
         width: 90%;  
     }
-    .fotorama{   
-        width: 100%;
-    }
     .fotorama img{
-        width: 100%;
-        height: auto;
+       margin: 0;
+       padding: 0;
+    }
+    .fotorama a{
+        
     }
     .repair-record-item button{
         font-size: 14px;
@@ -401,11 +397,6 @@
     .developer{
         padding-top: 10px;
         display:block;
-    }
-    .fotorama{
-        /*
-        width: 500px;
-        */
     }
 }
 
@@ -442,9 +433,11 @@
         font-size:14px;;
     }
     .contacts-map{
-        width: 400px;
+        width: 96%;  
     }
-    
+    .fotorama__wrap{
+        margin-top: -50px; 
+    }
 }
 
 
@@ -467,14 +460,6 @@
     .call-submit{
         font-size: 16px;
     }
-    .contacts-map{
-        width: 100%;   
-    }
-    .fotorama{
-        /*
-        width: 100%;
-        */
-    }
     .content-row h4{
         margin: 10px 10px 20px 10px;
     }
@@ -495,6 +480,12 @@
     .prices-content{
         margin-left: 15px;
         margin-right:15px;  
+    }
+    .fotorama__wrap{
+        margin-top: -70px; 
+    }
+    img.fotorama__img{
+       
     }
 }
 
